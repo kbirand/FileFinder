@@ -13,6 +13,7 @@
 		2BAF196D22B07873005AF4B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BAF196B22B07873005AF4B5 /* Main.storyboard */; };
 		2BAF197922B07873005AF4B5 /* enumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAF197822B07873005AF4B5 /* enumTests.swift */; };
 		2BAF198422B07873005AF4B5 /* enumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAF198322B07873005AF4B5 /* enumUITests.swift */; };
+		2BAF199222B07C45005AF4B5 /* LineNumberRulerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAF199122B07C44005AF4B5 /* LineNumberRulerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		2BAF197F22B07873005AF4B5 /* enumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = enumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BAF198322B07873005AF4B5 /* enumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enumUITests.swift; sourceTree = "<group>"; };
 		2BAF198522B07873005AF4B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BAF199122B07C44005AF4B5 /* LineNumberRulerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineNumberRulerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		2BAF196422B07872005AF4B5 /* enum */ = {
 			isa = PBXGroup;
 			children = (
+				2BAF199122B07C44005AF4B5 /* LineNumberRulerView.swift */,
 				2BAF196522B07872005AF4B5 /* AppDelegate.swift */,
 				2BAF196722B07872005AF4B5 /* ViewController.swift */,
 				2BAF196922B07873005AF4B5 /* Assets.xcassets */,
@@ -187,11 +190,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Koray Birand";
 				TargetAttributes = {
 					2BAF196122B07872005AF4B5 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					2BAF197322B07873005AF4B5 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -254,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BAF199222B07C45005AF4B5 /* LineNumberRulerView.swift in Sources */,
 				2BAF196822B07872005AF4B5 /* ViewController.swift in Sources */,
 				2BAF196622B07872005AF4B5 /* AppDelegate.swift in Sources */,
 			);
@@ -421,7 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = enum/enum.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = enum/Info.plist;
@@ -439,7 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = enum/enum.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = enum/Info.plist;
